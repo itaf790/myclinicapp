@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myclinicapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/ClinicAppointmentApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ClinicApplication">
+        <activity android:name=".profileDoctorActivity"></activity>
+        <activity android:name=".PatientRequestPage" />
+        <activity android:name=".MyPatientsActivity" />
+        <activity android:name=".MyCalendarDoctorActivity" />
+        <activity android:name=".EditProfileDoctorActivity" />
+        <activity android:name=".editProfilePatientActivity" />
+        <activity android:name=".DoctorAppointementActivity" />
+        <activity android:name=".ConfirmedAppointmensActivity" />
+        <activity android:name=".AppointementActivity" />
+        <activity android:name=".PatientInfoActivity" />
+        <activity android:name=".Activitysheet" />
+        <activity android:name=".TestActivity" />
+        <activity android:name=".ChatActivity" />
+        <activity android:name=".ProfilePatientActivity" />
+        <activity android:name=".Medicalfile" />
+        <activity android:name=".MyDoctorsAvtivity" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".PatientAppointementsActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".signinactivity" />
+        <activity android:name=".DoctorHomeActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

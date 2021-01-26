@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5"
+    tools:context=".DoctorHomeActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="44dp"
+        android:layout_height="46dp"
+        android:elevation="19dp"
+        app:layout_constraintEnd_toEndOf="@+id/listPatients"
+        app:layout_constraintStart_toStartOf="@+id/listPatients"
+        app:layout_constraintTop_toTopOf="@+id/listPatients"
+        app:srcCompat="@drawable/ic_person"
+        tools:ignore="VectorDrawableCompat" />
+
+    <Button
+        android:id="@+id/myCalendarBtn"
+        android:layout_width="118dp"
+        android:layout_height="107dp"
+        android:background="@drawable/button_home"
+        android:fontFamily="sans-serif"
+        android:gravity="bottom|center"
+        android:paddingBottom="8dp"
+        android:text="My Calendar"
+        android:textAllCaps="false"
+        android:textColor="#009688"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintStart_toEndOf="@+id/profile"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.49" />
+
+    <Button
+        android:id="@+id/signOutBtn"
+        android:layout_width="154dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="16dp"
+        android:text="SignOut"
+
+        android:textColorHighlight="@color/teal_700"
+        android:textSize="16sp"
+        app:backgroundTint="@color/design_default_color_secondary_variant"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnRequst"
+        android:layout_width="118dp"
+        android:layout_height="107dp"
+        android:background="@drawable/button_home"
+        android:fontFamily="sans-serif"
+        android:gravity="bottom|center"
+        android:paddingBottom="8dp"
+        android:text="Appointement"
+        android:textAllCaps="false"
+        android:textColor="#009688"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.655"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/appointement"
+        android:layout_width="118dp"
+        android:layout_height="107dp"
+        android:background="@drawable/button_home"
+        android:fontFamily="sans-serif"
+        android:gravity="bottom|center"
+        android:paddingBottom="8dp"
+        android:text=" Patient Request"
+        android:textAllCaps="false"
+        android:textColor="#009688"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toEndOf="@+id/listPatients"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.86"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/listPatients"
+        android:layout_width="118dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/button_home"
+        android:fontFamily="sans-serif"
+        android:gravity="bottom|center"
+        android:paddingBottom="8dp"
+        android:text="My Patients"
+        android:textAllCaps="false"
+        android:textColor="#009688"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnRequst"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.847"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/profile"
+        android:layout_width="118dp"
+        android:layout_height="107dp"
+        android:layout_marginEnd="264dp"
+        android:layout_marginRight="264dp"
+        android:background="@drawable/button_home"
+        android:fontFamily="sans-serif"
+        android:gravity="bottom|center"
+        android:paddingBottom="8dp"
+        android:text="Profile"
+        android:textAllCaps="false"
+        android:textColor="#009688"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="215dp"
+        android:background="@drawable/welcome"
+        android:elevation="6dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/home_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="155dp"
+                android:layout_marginLeft="155dp"
+                android:layout_marginBottom="156dp"
+                android:gravity="center"
+                android:text="Home"
+                android:textColor="#009688"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/doctorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="113dp"
+                android:layout_marginLeft="113dp"
+                android:layout_marginBottom="99dp"
+                android:text="Welcome Doctor"
+                android:textColor="#009688"
+                android:textSize="26sp" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="19dp"
+        app:layout_constraintBottom_toBottomOf="@+id/profile"
+        app:layout_constraintEnd_toEndOf="@+id/profile"
+        app:layout_constraintHorizontal_bias="0.406"
+        app:layout_constraintStart_toStartOf="@+id/profile"
+        app:layout_constraintTop_toTopOf="@+id/profile"
+        app:layout_constraintVertical_bias="0.169"
+        app:srcCompat="@drawable/ic_profile"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="19dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnRequst"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintStart_toStartOf="@+id/btnRequst"
+        app:layout_constraintTop_toTopOf="@+id/btnRequst"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_appointement"
+        tools:ignore="MissingConstraints,VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="62dp"
+        android:layout_height="61dp"
+        android:elevation="19dp"
+        app:layout_constraintBottom_toBottomOf="@+id/appointement"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="@+id/appointement"
+        app:layout_constraintTop_toTopOf="@+id/appointement"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_request"
+        tools:ignore="MissingConstraints,VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="63dp"
+        android:layout_height="61dp"
+        android:elevation="19dp"
+        app:layout_constraintBottom_toBottomOf="@+id/myCalendarBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.415"
+        app:layout_constraintStart_toStartOf="@+id/myCalendarBtn"
+        app:layout_constraintTop_toTopOf="@+id/myCalendarBtn"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_calendar"
+        tools:ignore="VectorDrawableCompat" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

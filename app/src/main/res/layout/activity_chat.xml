@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DoctorHomeActivity"
+    android:background="#FFFFFF">
+
+
+    <!-- RECYCLER VIEW CONTAINER -->
+    <LinearLayout
+        android:id="@+id/activity_mentor_chat_recycler_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@id/activity_mentor_chat_add_message_container">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#B1D8D3">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif"
+                android:text="Messages"
+                android:textColor="#FFFFFF"
+                android:textSize="30dp" />
+        </LinearLayout>
+        <!-- RECYCLER VIEW -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/activity_mentor_chat_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/activity_mentor_chat_message_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="hint"
+            android:inputType="textMultiLine" />
+
+    </LinearLayout>
+
+    <!-- ADD MESSAGE CONTAINER -->
+    <LinearLayout
+        android:id="@+id/activity_mentor_chat_add_message_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <!-- TEXT MESSAGE EDIT TEXT -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="55dp">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- ADD MESSAGE BUTTON -->
+        <Button
+            android:id="@+id/activity_mentor_chat_send_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="button_title_mentor_chat_activity" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
