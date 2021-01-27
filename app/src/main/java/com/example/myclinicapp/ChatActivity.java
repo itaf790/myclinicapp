@@ -1,7 +1,6 @@
 package com.example.myclinicapp;
 
 import android.os.Bundle;
-
 import android.view.View;
 import android.widget.Button;
 
@@ -40,7 +39,7 @@ public class ChatActivity extends AppCompatActivity {
         btnEnvoyer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Message msg = new Message(envoyer.getText().toString(),FirebaseAuth.getInstance().getCurrentUser().getEmail().toString());
+                Message msg = new Message(envoyer.getText().toString(), FirebaseAuth.getInstance().getCurrentUser().getEmail().toString());
                 MessageRef1.document().set(msg);
                 MessageRef2.document().set(msg);
                 envoyer.setText("");
