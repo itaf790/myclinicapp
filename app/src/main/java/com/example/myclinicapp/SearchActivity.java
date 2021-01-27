@@ -35,8 +35,9 @@ public class SearchActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
-//        configureToolbar();
-      setUpRecyclerView();
+
+        configureToolbar();
+        setUpRecyclerView();
 
     }
 
@@ -54,6 +55,11 @@ public class SearchActivity extends AppCompatActivity {
                 recyclerView.setAdapter(adapter);
             }
         });
+        //FirestoreRecyclerOptions<Doctor> options = new FirestoreRecyclerOptions.Builder<Doctor>()
+        //  .setQuery(query, Doctor.class)
+        //  .build();
+
+        //adapter = new DoctoreAdapter(options);
 
 
     }
@@ -108,7 +114,8 @@ public class SearchActivity extends AppCompatActivity {
                 return true;
             case R.id.option_general:
                 DoctorAdapterFiltred.specialiteSearch = true;
-                adapter.getFilter().filter("général");
+                adapter.getFilter().filter("\n" +
+                        "general");
                 return true;
             case R.id.option_Dentist:
                 DoctorAdapterFiltred.specialiteSearch = true;
@@ -141,10 +148,8 @@ public class SearchActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.activity_main_toolbar);
         toolbar.setTitle("Doctors list");
         // Sets the Toolbar
-//        setSupportActionBar(toolbar);
+        setSupportActionBar(toolbar);
     }
 
 
 }
-
-

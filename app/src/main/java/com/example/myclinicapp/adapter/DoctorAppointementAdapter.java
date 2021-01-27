@@ -32,11 +32,6 @@ import com.squareup.picasso.Picasso;
 public class DoctorAppointementAdapter extends FirestoreRecyclerAdapter<ApointementInformation, DoctorAppointementAdapter.MyDoctorAppointementHolder> {
     StorageReference pathReference ;
 
-
-    /**
-     * Create a new RecyclerView adapter that listens to a Firestore Query.
-     * @param options
-     */
     public DoctorAppointementAdapter(@NonNull FirestoreRecyclerOptions<ApointementInformation> options) {
         super(options);
     }

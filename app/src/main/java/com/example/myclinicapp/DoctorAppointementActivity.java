@@ -31,7 +31,7 @@ public class DoctorAppointementActivity extends AppCompatActivity {
         //Get the doctors by patient id
         final String doctorID = FirebaseAuth.getInstance().getCurrentUser().getEmail().toString();
         Query query = doctorAppointementRef.document(""+doctorID+"")
-                .collection("apointement request")
+                .collection("apointementrequest")
                 .orderBy("time", Query.Direction.DESCENDING);
 
         FirestoreRecyclerOptions<ApointementInformation> options = new FirestoreRecyclerOptions.Builder<ApointementInformation>()

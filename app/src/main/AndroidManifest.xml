@@ -6,7 +6,6 @@
         android:allowBackup="true"
         android:icon="@drawable/logo"
         android:label="@string/ClinicAppointmentApp"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ClinicApplication">
         <activity android:name=".profileDoctorActivity"></activity>
@@ -21,7 +20,6 @@
         <activity android:name=".PatientInfoActivity" />
         <activity android:name=".Activitysheet" />
         <activity android:name=".TestActivity" />
-        <activity android:name=".ChatActivity" />
         <activity android:name=".ProfilePatientActivity" />
         <activity android:name=".Medicalfile" />
         <activity android:name=".MyDoctorsAvtivity" />

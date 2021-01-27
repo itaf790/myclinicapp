@@ -30,10 +30,8 @@ import com.squareup.picasso.Picasso;
 public class MyPatientsAdapter extends FirestoreRecyclerAdapter<Patient, MyPatientsAdapter.MyPatientsHolder> {
     StorageReference pathReference ;
 
-    /**
-     * Create a new RecyclerView adapter that listens to a Firestore Query.
-     * @param options
-     */
+
+
     public MyPatientsAdapter(@NonNull FirestoreRecyclerOptions<Patient> options) {
         super(options);
     }
