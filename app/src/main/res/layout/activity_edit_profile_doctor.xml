@@ -105,8 +105,8 @@
 
     <ImageView
         android:id="@+id/image_profile"
-        android:layout_width="118dp"
-        android:layout_height="119dp"
+        android:layout_width="195dp"
+        android:layout_height="145dp"
         android:background="@drawable/img"
         android:scaleType="center"
         app:layout_constraintBottom_toTopOf="@+id/name"

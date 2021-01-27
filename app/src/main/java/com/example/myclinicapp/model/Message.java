@@ -18,14 +18,14 @@ public class Message {
     }
 
 
-    // --- GETTERS ---
+
     public String getMessage() { return message; }
 
     @ServerTimestamp
     public Date getDateCreated() { return dateCreated; }
     public String getUserSender() { return userSender; }
 
-    // --- SETTERS ---
+
     public void setMessage(String message) { this.message = message; }
     public void setDateCreated(Date dateCreated) { this.dateCreated = dateCreated; }
     public void setUserSender(String userSender) { this.userSender = userSender; }

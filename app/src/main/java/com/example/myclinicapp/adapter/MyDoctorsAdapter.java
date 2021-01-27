@@ -1,19 +1,16 @@
 package com.example.myclinicapp.adapter;
 
-
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.RecyclerView;
-
 
 import com.example.myclinicapp.ChatActivity;
 import com.example.myclinicapp.R;
@@ -27,13 +24,14 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.squareup.picasso.Picasso;
 
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
 public class MyDoctorsAdapter extends FirestoreRecyclerAdapter<Doctor, MyDoctorsAdapter.MyDoctorAppointementHolder> {
     StorageReference pathReference ;
 
-    /**
-     * Create a new RecyclerView adapter that listens to a Firestore Query.
-     * @param options
-     */
+
+
     public MyDoctorsAdapter(@NonNull FirestoreRecyclerOptions<Doctor> options) {
         super(options);
     }
@@ -84,8 +82,8 @@ public class MyDoctorsAdapter extends FirestoreRecyclerAdapter<Doctor, MyDoctors
 
     private void openPage(Context wf, Doctor d){
         Intent i = new Intent(wf, ChatActivity.class);
-        i.putExtra("key1",d.getEmail()+"_"+ FirebaseAuth.getInstance().getCurrentUser().getEmail().toString());
-        i.putExtra("key2",FirebaseAuth.getInstance().getCurrentUser().getEmail().toString()+"_"+d.getEmail());
+        i.putExtra("key1",d.getEmail()+"_"+ FirebaseAuth.getInstance().getCurrentUser().getEmail());
+        i.putExtra("key2",FirebaseAuth.getInstance().getCurrentUser().getEmail()+"_"+d.getEmail());
         wf.startActivity(i);
     }
 
@@ -100,19 +98,20 @@ public class MyDoctorsAdapter extends FirestoreRecyclerAdapter<Doctor, MyDoctors
         //Here we hold the MyDoctorItems
         TextView textViewTitle;
         TextView textViewDescription;
+        TextView textViewStatus;
         ImageView imageViewDoctor;
         Button sendMessageButton;
         Button callBtn;
-
+        Button contactButton;
         public MyDoctorAppointementHolder(@NonNull View itemView) {
             super(itemView);
             textViewTitle = itemView.findViewById(R.id.doctor_view_title);
             textViewDescription = itemView.findViewById(R.id.text_view_description);
-
+            textViewStatus = itemView.findViewById(R.id.onlineStatut);
             imageViewDoctor = itemView.findViewById(R.id.doctor_item_image);
             sendMessageButton = itemView.findViewById(R.id.voir_fiche_btn);
             callBtn = itemView.findViewById(R.id.callBtn);
-
+            contactButton = itemView.findViewById(R.id.contact);
         }
     }
 
@@ -120,4 +119,3 @@ public class MyDoctorsAdapter extends FirestoreRecyclerAdapter<Doctor, MyDoctors
 
 
 }
-

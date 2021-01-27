@@ -9,18 +9,18 @@
     app:cardElevation="0dp">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="411dp"
+        android:layout_height="114dp"
         android:layout_margin="5px"
         card_view:cardPreventCornerOverlap="false">
 
         <TextView
             android:id="@+id/message_item_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="311dp"
+            android:layout_height="match_parent"
             android:layout_gravity="right"
             android:background="@drawable/rounded_message"
-            android:fontFamily="sans-serif"
+            android:fontFamily="sans-serif-thin"
             android:maxWidth="200dp"
             android:shadowRadius="@android:integer/config_shortAnimTime"
             android:text=""
@@ -28,11 +28,11 @@
 
         <TextView
             android:id="@+id/message_item_text2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="94dp"
+            android:layout_height="107dp"
             android:layout_gravity="left"
             android:background="@drawable/rounded_message2"
-            android:fontFamily="sans-serif"
+            android:fontFamily="sans-serif-black"
             android:maxWidth="200dp"
             android:shadowRadius="@android:integer/config_shortAnimTime"
             android:text=""
