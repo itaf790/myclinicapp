@@ -9,7 +9,7 @@
     <ImageView
         android:layout_width="268dp"
         android:layout_height="245dp"
-        android:src="@drawable/logo"
+        android:src="@drawable/loggo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.566"

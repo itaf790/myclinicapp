@@ -9,8 +9,8 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:layout_width="174dp"
-        android:layout_height="93dp"
+        android:layout_width="214dp"
+        android:layout_height="124dp"
         android:layout_gravity="center_horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -18,7 +18,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.024"
-        app:srcCompat="@drawable/logo"
+        app:srcCompat="@drawable/loggo"
         tools:ignore="MissingConstraints" />
 
     <TextView

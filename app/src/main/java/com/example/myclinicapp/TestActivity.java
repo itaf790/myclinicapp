@@ -113,7 +113,7 @@ public class TestActivity extends AppCompatActivity {
                         }
                     }
                     else if(step == 2){
-                        // if(Common.currentTimeSlot != -1)
+
                         confirmeBooking();
                     }
                     viewPager.setCurrentItem(step);

@@ -87,7 +87,7 @@ public class ProfilePatientActivity extends AppCompatActivity {
             @Override
             public void onEvent(@Nullable DocumentSnapshot documentSnapshot, @Nullable FirebaseFirestoreException e) {
                 doctorName.setText(documentSnapshot.getString("name"));
-                // doctorSpe.setText(documentSnapshot.getString("dateNaissance"));
+
                 doctorPhone.setText(documentSnapshot.getString("tel"));
                 doctorEmail.setText(documentSnapshot.getString("email"));
                 doctorAddress.setText(documentSnapshot.getString("adresse"));

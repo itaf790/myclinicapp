@@ -51,7 +51,7 @@ public class MessageAdapter extends FirestoreRecyclerAdapter<Message,MessageAdap
         public MessageHolder(View itemView){
             super(itemView);
             text = itemView.findViewById(R.id.message_item_text);
-            text2 = itemView.findViewById(R.id.message_item_text2);
+          text2 = itemView.findViewById(R.id.message_item_text2);
         }
     }
 
